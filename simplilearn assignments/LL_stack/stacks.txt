@@ -1,0 +1,45 @@
+class stash{
+	int max=5;
+	int top=-1;
+	int data[] = new int[max];
+	
+	
+	public void push(int d) {
+		data[top+1]=d;
+		top=top+1;
+	}
+	
+	
+	public void prints() {
+		for(int s:data)
+		System.out.println(s);
+	}
+
+	 public int peek() {
+			return data[top];
+	}
+
+	 public int pop() {	
+		int temp=data[top];
+		top=top-1;
+		return temp ;
+	}
+} 
+
+
+class stacks {
+	public static void main(String[] args) {
+		stash s = new stash();
+		s.push(45);
+		s.push(89);
+		s.push(8);
+		s.push(231);
+		s.push(43);
+		
+		System.out.println("elements in the stack ");
+		s.prints();
+		System.out.println("element popped is"+s.pop());
+		System.out.println("top element of the stack"+s.peek());		
+	}
+
+}

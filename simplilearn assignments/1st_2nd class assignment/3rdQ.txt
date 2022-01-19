@@ -1,0 +1,33 @@
+3. Write examples for increment and decrement operators
+
+answer:		
+
+There are 2 types in increment operator
+
+pre-increment operator:		int a=6;
+				int b=6;
+				b=++a;
+				here the value of 'a' is incremented first and then assigned to 'b'
+				hence b=7 , a=7
+
+post-increment operator:	int a=6;
+				int b=6;
+				b=a++;
+				here the value of 'b' is changed to 'a' and later 'a' is incremented
+				hence b=6 , a=7
+
+
+
+There are 2 types in decrement operator
+
+pre-decrement operator:		int a=6;
+				int b=6;
+				b=--a;
+				here the value of 'a' is decremented first and then assigned to 'b'
+				hence b=5 , a=5
+
+post-decrement operator:	int a=6;
+				int b=6;
+				b=a--;
+				here the value of 'b' is changed to 'a' and later 'a' is decremented
+				hence b=6 , a=5

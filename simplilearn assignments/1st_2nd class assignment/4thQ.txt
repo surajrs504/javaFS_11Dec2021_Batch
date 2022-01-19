@@ -1,0 +1,80 @@
+4. Write java code for below programs:
+    a. Factorial of a number
+    b. Multiplication table of a given number
+    c. nCr and nPr values
+
+=============================================================================
+
+
+a)	Factorial of a number	
+		
+
+import java.util.*;
+public class factorial 
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		int n=sc.nextInt();
+		int fact=1;
+		 for(int i=1;i<=n;i++)
+		 { fact=fact*i;
+		 }
+		 System.out.println(fact);
+	}
+
+}
+
+==============================================================================
+
+b)		 Multiplication table of a given number
+
+
+import java.util.*;
+public class multiplication {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter your number");
+		int n= sc.nextInt();
+		for(int i=1;i<=10;i++) {
+			System.out.println(n+"*"+i+"="+(n*i));
+		}
+	}
+
+}
+
+===================================================================================
+
+c)  			nCr and nPr values
+
+import java.util.*;
+public class permu
+{
+	public static int fact(int n) {  // method to find the factorial
+		int fact=1;
+		 for(int i=1;i<=n;i++)
+		 { fact=fact*i;
+		 }
+		 return fact;
+	}
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter n and r");
+		int n=sc.nextInt();
+		int r=sc.nextInt();
+		int ncr=0;
+		int npr=0;
+		ncr=(fact(n)/(fact(r)*fact(n-r))); 	//formula
+		npr=(fact(n)/fact(n-r));		//formula
+		System.out.println("nCr value is "+ncr);
+		System.out.println("nPr value is "+npr);
+	}
+
+}
+
+===============================THE END=============================================

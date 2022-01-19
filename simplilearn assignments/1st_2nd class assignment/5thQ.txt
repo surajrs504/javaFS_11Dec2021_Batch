@@ -1,0 +1,10 @@
+5. Write the concepts discussed about strings in the class.
+
+
+String are immutable which means they are unmodifiable, once the string is created, it cannot be changed 
+ie if a String is changed it will create entirely new string
+but if we explicitly assign it to a reference variable it will refer to a new object in which the change has taken place.
+
+String datatype starts with a capital 'S' whereas other datatype start with a smaller case letter since its a 
+class and not a primitive datatype.
+

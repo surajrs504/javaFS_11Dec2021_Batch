@@ -1,0 +1,82 @@
+
+class Node{
+	public int data;
+	public Node next;
+	
+	 public void printdata() {
+		System.out.print(data+">>");	
+	 }
+	
+	
+}
+
+
+class singlyll{
+Node head;
+
+	public boolean isEmpty() {
+	return(head==null);
+	}
+	
+	
+	public void newnode(int d) {
+		Node n= new Node();
+		n.data=d;
+		n.next=head; 
+		head=n;
+	}
+	
+	
+	public void printd() {
+		Node current=head;
+		while(current!=null) {
+			current.printdata();
+			current=current.next;
+			}
+		System.out.println("\n");
+	}
+	
+	public Node delfirst() {
+		head=head.next;
+		return(head);
+	}
+
+	
+	public void insertlast(int d) {
+		Node current=head;
+		while(current.next!=null) {
+			current=current.next;
+		}
+	
+		Node n= new Node();
+		current.next=n;
+		n.data=d;
+		n.next=null;
+	
+	}	
+}
+
+class linkelist {
+
+	public static void main(String[] args) {
+		
+		
+		singlyll list = new singlyll();
+		
+		list.isEmpty();
+		list.newnode(10);
+		list.newnode(20);
+		list.newnode(30);
+		list.newnode(40);
+		System.out.println("after insertion");
+		list.printd();
+		list.delfirst();
+		System.out.println("after deletion");
+		list.printd();
+		System.out.println("after adding last element");
+		list.insertlast(7);
+		list.printd();
+		
+	}
+
+}

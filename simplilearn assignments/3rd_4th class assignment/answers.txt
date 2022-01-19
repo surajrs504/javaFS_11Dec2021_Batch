@@ -1,0 +1,74 @@
+1) what is abstraction?
+
+Process of hiding the internal working of a entity is abstraction . A common example is
+a car and the driver in this scenerio the driver need not know the internal working of a combustion 
+engine just to drive the car, all he needs to know is how to steer the car and how to use 
+the acclerator brake and clutch, this process of hiding the internal working is called abstraction
+
+Abstraction in java is used to hide the implemention and showing only the functionality
+ to the user 
+
+======================================================================================================
+
+2) Is Abstract class related to Abstraction ? find it.
+
+No, abstraction as said in the prev question is detail hiding whereas in abstract class 
+a abstract method can only be declared and the class which extends this abstract class 
+that is the sub class is forced to define the abstract methods which was declared in the
+abstract class
+
+=======================================================================================================
+
+3) Interfaces also can have few things - what are those things can 
+interfaces have apart from abstract methods?
+
+methods in interface are 100% abstract that is normal method cannot be used inside interface 
+whereas inside a abstract a normal method can be used
+
+variables declared in interfaces are by default public static final whereas in abstract class
+it can contain final, non-final, static, non-static variables
+
+=========================================================================================================
+
+4) Can interfaces have normal variables ?
+
+it can have variables which are by default declared to be public static final
+
+========================================================================================================
+5) can interfaces have methods with definitions ? if so how ? or what ?
+ 
+no, interface can have method declaretion only , method should be defined in the class that implements 
+that interface.
+
+========================================================================================================
+6) How to implement multiple inheritance using interfaces
+
+since java doesn't allow multiple inheritence we can implement it through interfaces for example
+
+interface catt{
+	void walk();
+}
+
+interface frogg{
+	void jump();
+}
+
+class Helloo implements catt, frogg{
+	public void walk() {
+		System.out.println("i can walk");
+	}
+	public void jump() {
+		System.out.println("i can jump");
+	}
+}
+class demo{
+
+	public static void main(String[] args) {
+		Helloo h=new Helloo();
+		h.walk();
+		h.jump();
+		
+	}
+
+}
+
