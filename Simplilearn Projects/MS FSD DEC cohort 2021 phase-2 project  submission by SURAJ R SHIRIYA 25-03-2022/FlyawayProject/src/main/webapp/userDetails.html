@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3 align=center>REGISTRATION PAGE</h3>
+<table align=center>
+<form action="RegisterServlet" method="GET">
+
+<table border=5 align=center>
+			<tr align=center><td colspan=2>Personal Details<td></td>
+			<tr>
+			<td>Enter Email :</td>
+            <td><input type="email" name="email" required="required"></td>
+            </tr>
+            
+            <tr>
+            <td> Enter First Name </td>
+            <td><input type="text" name="fname" required="required"></td>
+           </tr>
+            
+            <tr>
+           	<td>Enter Last Name</td>
+            <td><input type="text" name="lname" required="required"></td>
+            </tr>
+             
+             <tr>
+            <td> Enter Age </td>
+            <td><input type="number" name="age" maxlength="2" required="required"></td>
+           </tr>
+           
+           <tr>
+           <td>Enter Mobile Number</td>
+            <td><input type="text" name="mobile" maxlength="10" required="required"></td>
+            </tr>
+            
+            <tr>
+            <td>Gender </td>
+            <td><input type="radio" name="gender" value="female">Female
+				    	<input type="radio" name="gender" value="Male">Male</td>
+            </tr>
+            
+            
+              <tr>
+           <td>Password </td>
+            <td><input type="password" name="password"></td>
+            </tr>
+              <tr>
+           <td>Citizenship </td>
+            <td><input type="text" name="country" required="required"></td>
+            </tr>
+            <tr align=center><td colspan=2>
+            <button type="reset">Clear</button>
+           <button type="submit">Register</button><br>
+           already a user? <a href="adminloginpage.html">click here to login</a>	    
+           </td></tr>
+            </table>
+
+
+			
+						
+		</form>
+		</table>
+</body>
+</html>

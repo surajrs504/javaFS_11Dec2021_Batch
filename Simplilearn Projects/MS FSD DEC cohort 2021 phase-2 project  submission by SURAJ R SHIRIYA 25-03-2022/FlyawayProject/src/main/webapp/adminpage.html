@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border=5 align=center>
+<tr>
+<td><h1 align=center>THIS IS A ADMIN PAGE</h1>
+<h3 align=center>to change password click below</h3>
+<form action="chngpwd.html">
+  
+  <center><input  type="submit" value="Change password"></center>
+</form></td></tr>
+
+<tr><td><h3 align=center >To view details on flights click from the below menu and submit</h3></td></tr>
+
+
+<tr><td>
+<form action="adminOpServlet" method="get">
+  <select  name="option">
+  <option value=listSD> LIST OF SOURCE AND DESTINATION</option>
+  <option value=listAirlines>LIST OF AIRLINES</option>
+  <option value=details>LIST OF FLIGHTS WITH SOURCE,DESTIONATION,AIRLINE,TICKET PRICE</option>
+  </select>
+  
+  <input type="submit" value="Search">
+</form>
+</td></tr>
+</table>
+
+
+
+</body>
+</html>

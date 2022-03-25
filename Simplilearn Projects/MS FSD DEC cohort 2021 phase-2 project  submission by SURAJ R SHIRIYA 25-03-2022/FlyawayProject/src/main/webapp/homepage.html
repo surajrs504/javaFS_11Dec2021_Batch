@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<h1 align=center> FLYAWAY </h1>
+<h4 align=center> Come fly with me.... </h4>
+</head>
+<body>
+<form action="SearchServlet" method=GET>
+<table align=center border=5>
+	<tr><th colspan=2>FLIGHT SEARCH PAGE</th></tr>
+	
+	<tr>
+		<td>SOURCE</td>
+		<td>
+		<select  name="source">
+		  <option value=mumbai> mumbai</option>
+		 <option value=delhi> delhi</option>
+		 <option value=banglore>banglore</option>
+		 <option value=kochi>kochi</option>
+		 <option value=riyadh>riyadh</option>
+		 <option value=singapore>singapore</option>
+		 <option value=dubai>dubai</option>
+  		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>DESTINATION</td>
+		<td><select  name="destination">
+		  <option value=mumbai> mumbai</option>
+		 <option value=delhi>delhi</option>
+		 <option value=banglore>banglore</option>
+		 <option value=kochi>kochi</option>
+		 <option value=riyadh>riyadh</option>
+		 <option value=singapore>singapore</option>
+		 <option value=dubai>dubai</option>
+  		</select>
+		</td>
+	</tr>
+	<tr>
+	<td>Number of Seats</td>
+	<td><input type="text"  name="seats" /></td>
+	</tr>
+	<tr>
+	<td>DATE</td>
+	<td>
+	<input type="date" name="date"></td>
+	<tr align=center>
+	
+	<td colspan=2>
+		<input type=reset value=RESET name=reset/>
+		<input type=submit value=SEARCH name=submit/>
+	</td>
+	</tr>
+
+</table>
+
+
+
+
+</form>
+</body>
+</html>
