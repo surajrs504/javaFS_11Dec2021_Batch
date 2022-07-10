@@ -1,0 +1,17 @@
+
+.example-button-row {
+    
+    display: table-cell;
+    width: 490px;
+
+    
+  }
+mat-card{
+    padding-bottom: 100%;
+}
+  button{
+    width:100%;
+    margin-bottom: 15px;
+   
+
+  }

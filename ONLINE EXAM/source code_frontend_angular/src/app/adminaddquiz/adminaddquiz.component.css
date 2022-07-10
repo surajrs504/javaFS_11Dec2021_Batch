@@ -1,0 +1,26 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bodycard{
+    width: 100%;
+   
+    display: block;
+    margin-left:auto;
+    margin-right:auto;  
+    vertical-align:middle;
+    
+    
+}
+.cardheader{
+  text-align: center;
+}
+.example-button-row {
+    display: table-cell;
+    width: 900px;
+  }
+  mat-form-field{
+    width: 90%;
+  }

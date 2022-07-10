@@ -1,0 +1,15 @@
+
+<p>
+    <mat-toolbar color="primary">
+      <span>Online quiz </span>
+    </mat-toolbar>
+  </p>
+<mat-drawer-container class="example-container">
+   
+    <mat-drawer mode="side" opened class="drawer"><app-sidenav></app-sidenav>  </mat-drawer>
+    <mat-drawer-content>
+       
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  <div>side</div>

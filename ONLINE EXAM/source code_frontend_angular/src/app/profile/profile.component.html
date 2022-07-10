@@ -1,0 +1,57 @@
+<!-- <p>profile works!</p>
+<table border="5px">
+    <tr>
+        <th>id</th>
+        <td>{{profile.id}}</td>
+    </tr>
+    <tr>
+        <th>username</th>
+        <td>{{profile.username}}</td>
+    </tr>
+    <tr>
+        <th>firstname</th>
+        <td>{{profile.firstname}}</td>
+    </tr>
+    <tr>
+        <th>lastname</th>
+        <td>{{profile.lastname}}</td>
+    </tr>
+    <tr>
+        <th>regnumber</th>
+        <td>{{profile.regnumber}}</td>
+    </tr>
+    <tr>
+        <th>phonenumber</th>
+        <td>{{profile.phnnumber}}</td>
+    </tr>
+    <tr>
+        <th>emailid</th>
+        <td>{{profile.emailid}}</td>
+    </tr>
+</table>
+<p>{{profile.id}}</p>
+id: number;
+regnumber:number;
+username:string;
+firstname:string;
+lastname:string;
+emailid:string;
+password:string;
+phnnumber:number; -->
+
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{profile.username}}</mat-card-title>
+      <mat-card-subtitle>{{profile.emailid}}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+        
+      <h3>Firstname:{{profile.firstname}}</h3>
+      <h3>Lastname:{{profile.lastname}}</h3>
+      <h3>regnumber:{{profile.regnumber}}</h3>
+      <h3>Phonenumber:{{profile.phnnumber}}</h3>
+    </mat-card-content>
+    
+  </mat-card>

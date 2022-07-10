@@ -1,0 +1,48 @@
+
+<!-- <table border="5px">
+   
+    <thead>
+        <tr>
+            <th>quizID</th>
+            
+            <th>quiz title</th>
+            <th>quiz descrition</th>
+            <th>quiz max marks</th>
+            <th>num num of questions</th>
+            <th colspan="2">category</th>
+            
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr *ngFor="let view of viewquiz">
+    
+            <td>{{view.quizinfoid}}</td>
+            <td>{{view.quiztitle}}</td>
+            <td>{{view.quizdescription}}</td>
+            <td>{{view.quizmaxmarks}}</td>
+            <td>{{view.quiznumofquestions}}</td>
+            <td><button [routerLink]="'/dashboard/viewquestion/'+view.quizinfoid+'/'+ view.quiztitle">questions</button></td>
+            <td><button>update</button></td>
+            <td><button (click)="deletequiz(view.quizinfoid)">delete</button></td>
+           
+    
+           
+            
+            
+        </tr>
+    
+    </tbody>
+    
+    </table> -->
+
+    <div *ngFor="let view of viewquiz">
+        <mat-card>
+            <mat-card-title>{{view.quiztitle}}</mat-card-title>
+            <mat-card-content>{{view.quizdescription}}</mat-card-content>
+            <mat-card-footer><h3>max marks:{{view.quizmaxmarks}} </h3><h3>No of questions: {{view.quiznumofquestions}}</h3>
+             <br>   <button  mat-raised-button color="accent" [routerLink]="'/dashboard/viewquestion/'+view.quizinfoid+'/'+ view.quiztitle">questions</button>
+             <button class="delbtn"  mat-raised-button color="warn"  (click)="deletequiz(view.quizinfoid)">delete</button></mat-card-footer>
+        </mat-card>
+    </div>
+    

@@ -1,0 +1,35 @@
+<h2> user list</h2>
+<table border="5px">
+   
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>REGNO</th>
+        <th>USERNAME</th>
+        <th>FIRSTNAME</th>
+        <th>LASTNAME</th>
+        <th>EMAILID</th>
+        <th>PASSWORD</th>
+        <th>PHNNO</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr *ngFor="let user of userdet">
+
+        <td>{{user.id}}</td>
+        <td>{{user.regnumber}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.firstname}}</td>
+        <td>{{user.lastname}}</td>
+        <td>{{user.emailid}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.phnnumber}}</td>
+
+     
+        
+    </tr>
+
+</tbody>
+
+</table>
