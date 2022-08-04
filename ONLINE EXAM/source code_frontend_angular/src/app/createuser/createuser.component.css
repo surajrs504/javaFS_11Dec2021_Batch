@@ -1,0 +1,36 @@
+
+  /* .main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* .example-card{
+    margin: 0 auto;
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}*/
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bodycard{
+  width: 350px;
+ 
+  display: block;
+  margin-left:auto;
+  margin-right:auto;  
+  vertical-align:middle;
+  
+  
+}
+.cardheader{
+text-align: center;
+}
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}

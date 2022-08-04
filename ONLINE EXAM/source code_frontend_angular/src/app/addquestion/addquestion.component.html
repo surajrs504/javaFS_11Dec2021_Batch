@@ -1,0 +1,57 @@
+
+{{question | json}}
+<div class="bodycard">
+
+    <form (ngSubmit)="onsubmit()">
+
+        <mat-card>
+            <div class="cardheader">
+                <mat-card-title>add question</mat-card-title>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>question</mat-label>
+                    <input matInput [(ngModel)]="question.qcontent" name="qcontent">
+                </mat-form-field>
+                <br>
+               
+                <mat-form-field appearance="fill">
+                    <mat-label>option1</mat-label>
+                    <input matInput [(ngModel)]="question.option1" name=" option1">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>option2</mat-label>
+                    <input matInput [(ngModel)]="question.option2" name=" option2">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>option3</mat-label>
+                    <input matInput [(ngModel)]="question.option3" name="  option3">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>option4</mat-label>
+                    <input matInput [(ngModel)]="question.option4" name=" option4">
+                </mat-form-field>
+
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>answer</mat-label>
+                    <input matInput [(ngModel)]="question.answer" name=" answer">
+                </mat-form-field>
+                
+                <br>
+                <div class="example-button-row">
+                    <button mat-raised-button type="submit">add quiz</button>
+
+
+
+
+
+
+                </div>
+            </div>
+        </mat-card>
+    </form>
+</div>
+{{question|json}}

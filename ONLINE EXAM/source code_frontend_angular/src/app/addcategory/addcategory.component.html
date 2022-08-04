@@ -1,0 +1,27 @@
+
+<div class="bodycard">
+
+    <form (ngSubmit)="onsubmit()">
+
+        <mat-card>
+            <div class="cardheader">
+                <mat-card-title>add category</mat-card-title>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>title</mat-label>
+                    <input matInput [(ngModel)]="addcat.categorytitle" name="categorytitle">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>category de</mat-label>
+                    <textarea matInput [(ngModel)]="addcat.categorydescription" name="categorydescription"></textarea>
+                </mat-form-field>
+
+                <div class="example-button-row">
+                    <button mat-raised-button type="submit">add category</button>
+
+                </div>
+            </div>
+        </mat-card>
+    </form>
+    </div>

@@ -1,0 +1,57 @@
+
+
+<div class="bodycard">
+
+    <form (ngSubmit)="onsubmit()">
+
+        <mat-card>
+            <div class="cardheader">
+                <mat-card-title>add quiz</mat-card-title>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>quiz title</mat-label>
+                    <input matInput [(ngModel)]="addquiz.quiztitle" name="quiztitle">
+                </mat-form-field>
+<br>
+                <mat-form-field appearance="fill">
+                    <mat-label>quiz description</mat-label>
+                    <textarea matInput [(ngModel)]="addquiz.quizdescription" name=" quizdescription"></textarea>
+                </mat-form-field>
+<br>
+                <mat-form-field appearance="fill">
+                    <mat-label>max marks</mat-label>
+                    <input matInput [(ngModel)]="addquiz. quizmaxmarks" name=" quizmaxmarks">
+                </mat-form-field>
+<br>
+                <mat-form-field appearance="fill">
+                    <mat-label>number of marks</mat-label>
+                    <input matInput [(ngModel)]="addquiz. quiznumofquestions" name="  quiznumofquestions">
+                </mat-form-field>
+
+<br>                <ng-container *ngIf="addquiz.categoryquizes">
+    
+  
+                <mat-form-field appearance="fill">
+                    <mat-label>category</mat-label>
+                    <mat-select matInput  name="  category"  [(ngModel)]="addquiz.categoryquizes.categoryid " >
+                        <mat-option  *ngFor="let item of cat " [value]="item.categoryid">
+                         
+                            {{item.categorytitle}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </ng-container>
+<br>
+                <div  class="example-button-row">
+                    <button mat-raised-button type="submit">add quiz</button>
+
+
+
+
+
+
+                </div>
+            </div>
+        </mat-card>
+    </form>
+</div>

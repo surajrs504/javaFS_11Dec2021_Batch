@@ -1,0 +1,43 @@
+
+
+
+<p>
+    <mat-toolbar color="primary">
+      <span>quiz title: {{qtitle}}</span>
+    </mat-toolbar>
+  </p>
+  <div *ngIf="!done">
+<mat-card *ngFor="let q of question; let i=index " >Q:{{i+1}}
+    {{q.givenanswer}}
+    <mat-card-title>{{q.qcontent}}</mat-card-title>
+    <mat-card-content>
+        <!-- <mat-checkbox class="example-margin" [(ngModel)]="checked">{{q.option1}}</mat-checkbox> -->
+     <div> <input type="radio"  [value]="q.option1"   name={{i}}  [(ngModel)]="q.givenanswer" >{{q.option1}} 
+      <input type="radio"  [value]="q.option2"  name={{i}} [(ngModel)]="q.givenanswer">{{q.option2}} 
+      <input type="radio"  [value]="q.option3"  name={{i}} [(ngModel)]="q.givenanswer" >{{q.option3}} 
+      <input type="radio" [value]="q.option4" name={{i}} [(ngModel)]="q.givenanswer" >{{q.option4}}</div> 
+        <!-- <button mat-raised-button color="primary">{{q.option1}}</button>
+        <button mat-raised-button color="primary">{{q.option2}}</button><br>
+        <button mat-raised-button color="primary">{{q.option3}}</button>
+        <button mat-raised-button color="primary">{{q.option4}}</button> -->
+        
+    </mat-card-content>
+
+
+</mat-card>
+<button mat-raised-button color="primary" (click)="submit()">Submit</button><br>
+</div>
+    <div *ngIf="done">
+        <mat-card>
+            <mat-card-title>Result</mat-card-title>
+            <mat-card-content>
+                <h3>number of question: {{numq}} </h3>
+                <h3>max marks: {{maxmarks}}</h3>
+                <h3>number of correct answer: {{crctans}}
+                </h3>
+                <h3>marks :{{result}}</h3>
+                
+            </mat-card-content>
+        </mat-card>
+
+    </div>

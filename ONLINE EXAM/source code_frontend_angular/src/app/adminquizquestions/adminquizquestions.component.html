@@ -1,0 +1,47 @@
+
+<h1>add question to {{qtitle}}</h1>
+<table border="5px">
+   
+    <thead>
+        <tr>
+           
+            
+            <th>question</th>
+            <th>option1</th>
+            <th>option2</th>
+            <th>option3</th>
+            <th>option4</th>
+            <th>answer</th>
+
+            
+            
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr *ngFor="let view of quizquestion ">
+    
+            <td> {{view['qcontent']}}</td>
+        
+       
+            <td> {{view['option1']}}</td>
+            <td>{{view['option2']}}</td>
+            <td> {{view['option3']}}</td>
+            <td> {{view['option4']}}</td>
+            <td>{{view['answer'] }}</td>
+            <td><button (click)="deletebyid(view['questionid'])" >delete</button></td>
+          
+           
+           
+           
+    
+           
+            
+            
+        </tr>
+    
+    </tbody>
+    <button [routerLink]="'/dashboard/addquestion/'+qid">add questions</button>
+    
+    </table>
+    

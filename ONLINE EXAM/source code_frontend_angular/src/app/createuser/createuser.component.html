@@ -1,0 +1,77 @@
+<!-- <form (ngSubmit)="onSubmit()">
+    <!-- <label>ID</label>
+    <input type="text" [(ngModel)]="cu.id" name="id"/><br> -->s
+
+    <!-- <label>REGNUMBER</label>
+    <input type="number" [(ngModel)]="cu.regnumber" name="regnumber" /><br>
+
+    <label>USERNAME</label>
+    <input type="text" [(ngModel)]="cu.username" name="username" /><br>
+
+    <label>FIRSTNAME</label>
+    <input type="text" [(ngModel)]="cu.firstname" name="firstname"><br>
+
+    <label>LASTNAME</label>
+    <input type="text" [(ngModel)]="cu.lastname" name="lastname" /><br>
+
+    <label>EMAILID</label>
+    <input type="text" [(ngModel)]="cu.emailid" name="emailid" /><br>
+
+    <label>PASSWORD</label>
+    <input type="text" [(ngModel)]="cu.password" name="password" /><br>
+
+    <label>PHNNO</label>
+    <input type="number" [(ngModel)]="cu.phnnumber" name="phnnumber" /><br>
+    <button type="submit">submit</button>
+</form> --> 
+<div class="bodycard">
+
+    <form (ngSubmit)="onSubmit()">
+
+        <mat-card>
+            <div class="cardheader">
+                <mat-card-title>Register</mat-card-title>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>Username</mat-label>
+                    <input matInput [(ngModel)]="cu.regnumber" name="regnumber">
+                </mat-form-field>
+<br>
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" [(ngModel)]="cu.username" name="username">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>firstname</mat-label>
+                    <input matInput [(ngModel)]="cu.firstname" name="firstname">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>lastname</mat-label>
+                    <input matInput [(ngModel)]="cu.lastname" name="lastname">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>emailid</mat-label>
+                    <input matInput [(ngModel)]="cu.emailid" name="emailid">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>password</mat-label>
+                    <input matInput [(ngModel)]="cu.password" name="password">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>phnnumber</mat-label>
+                    <input matInput [(ngModel)]="cu.phnnumber" name="phnnumber">
+                </mat-form-field>
+                <br>
+                <div class="example-button-row">
+                    <button mat-raised-button type="submit">register</button>
+
+                </div>
+            </div>
+        </mat-card>
+    </form>
+</div>
